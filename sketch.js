@@ -3,6 +3,14 @@ createCanvas(1000, 700);
 }
 
 function draw() {
+ //George Mosher, rehsom@gmail.com, 2/13/2017
+ //For this sketch I used a design for a little sculpture I made in middle school. The only similarities I carried over were a 
+ //masked blue man with a little creature on a leash, but the actual designs for the characters are completely new. I started out
+ //feeling like it was frustrating and convoluted to code an image, but shortly after I started, I got the hang of it and started 
+ //really seeing where I could go with it. I like the idea of using math to plot out which visual elements go where, and I really liked
+ //that creating art introduced me more to coding. I am excited to see what I can do later on, because I feel like I learned pretty
+ //fast. Hopefully I can figure out how to implement this avatar into a later game that I create, either in this class or in the future.
+
  stroke(1);
    background(200);
     fill(0); //neck
