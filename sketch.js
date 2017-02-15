@@ -1,8 +1,3 @@
-function setup() {
-createCanvas(1000, 700);
-}
-
-function draw() {
  //George Mosher, rehsom@gmail.com, 2/13/2017
  //For this sketch I used a design for a little sculpture I made in middle school. The only similarities I carried over were a 
  //masked blue man with a little creature on a leash, but the actual designs for the characters are completely new. I started out
@@ -11,8 +6,12 @@ function draw() {
  //that creating art introduced me more to coding. I am excited to see what I can do later on, because I feel like I learned pretty
  //fast. Hopefully I can figure out how to implement this avatar into a later game that I create, either in this class or in the future.
 
- stroke(1);
-   background(200);
+function setup() {
+createCanvas(1000, 700);
+}
+
+function man() {
+stroke(1);
     fill(0); //neck
     rect(255, 330, 20, 30);
 fill(13, 44, 105); //head
@@ -125,7 +124,8 @@ fill(0); //teeth
     beginShape();
     fill(80);
     quad(290, 655, 303, 655, 320, 672, 290, 672);
-
+}
+function monster() {
 //monster
     //backlegs
     fill(162, 92, 31);
@@ -192,4 +192,10 @@ fill(0); //teeth
     triangle(856, 627, 860, 617, 865, 627);
     triangle(865, 627, 870, 615, 875, 627);
     triangle(875, 627, 879, 616, 883, 626);
+}
+
+function draw() {
+    background(230);
+    man();
+    monster();
 }
