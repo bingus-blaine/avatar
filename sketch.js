@@ -126,72 +126,69 @@ fill(0); //teeth
     quad(290, 655, 303, 655, 320, 672, 290, 672);
 }
 function monster() {
-//monster
-    //backlegs
-    fill(162, 92, 31);
-    rect(798, 615, 20.5, 60);
-    ellipse(808, 673, 20, 20);
+fill(162, 92, 31);
+    rect(mouseX-32, mouseY+15, 20.5, 60); //798, 615
+    ellipse(mouseX-22, mouseY+73, 20, 20); //808, 673
     //backfrontlegs
-    ellipse(848, 674, 21, 21);
-    rect(838, 642, 20, 35);
+    ellipse(mouseX+18, mouseY+74, 21, 21);
+    rect(mouseX+8, mouseY+42, 20, 35); 
     noStroke();
-    ellipse(848, 674, 20, 20);
-    rect(798, 615, 20, 60);
+    ellipse(mouseX+18, mouseY+74, 20, 20);
+    rect(mouseX-32, mouseY+15, 20, 60);
     stroke(1);
 //outline
-    rect(822, 645, 21, 35);
-    ellipse(833, 676, 21, 21);
+    rect(mouseX-8, mouseY+45, 21, 35);
+    ellipse(mouseX+3, mouseY+76, 21, 21);
 
-    fill(162, 92, 31);
-    ellipse(830, 600, 123, 103);
-    ellipse(790, 673, 22, 22)
-    rect(778, 615, 23, 60);
+        fill(162, 92, 31);
+    ellipse(mouseX, mouseY, 123, 103);
+    ellipse(mouseX-40, mouseY+73, 22, 22)
+    rect(mouseX-52, mouseY+15, 23, 60);
 //realmonster
     noStroke();
+        fill(185, 107, 38);
+    ellipse(mouseX, mouseY, 120, 100); //830, 600
+    fill(100, 6, 6);
+    ellipse(mouseX+15, mouseY, 105, 80);
+//monsterbod
     fill(185, 107, 38);
-    ellipse(830, 600, 120, 100);
-//leash
+    rect(mouseX-50, mouseY+25, 20, 50);
+    ellipse(mouseX-40, mouseY+73, 20, 20);
+    rect(mouseX-7, mouseY+45, 20, 35);
+    ellipse(mouseX+3, mouseY+76, 20, 20);
+//leash   
     fill(74, 9, 9);
     stroke(1);    
-    quad(460, 430, 820, 575, 817, 578, 457, 433);
-    fill(100, 6, 6);
-    ellipse(845, 600, 105, 80);
+    quad(460, 430, mouseX, mouseY, mouseX, mouseY, 457, 433);
 //monsterhead
     fill(162, 92, 31);
     stroke(1);
-    ellipse(850, 600, 100, 85);
+    ellipse(mouseX+30, mouseY, 100, 85);
     noStroke();
-//monsterbod
-    fill(185, 107, 38);
-    rect(780, 625, 20, 50);
-    ellipse(790, 673, 20, 20);
-    rect(823, 645, 20, 35);
-    ellipse(833, 676, 20, 20);
-    
 //monsterface
     noStroke();
     fill(240, 154, 154);
-    ellipse(830, 605, 19, 19);
-    ellipse(897, 603, 16, 16);
+    ellipse(mouseX, mouseY+5, 19, 19);
+    ellipse(mouseX+75, mouseY+3, 16, 16);
     stroke(1);
     fill(150, 0, 0);
-    ellipse(830, 605, 15, 15);
-    ellipse(897, 603, 12, 12);
+    ellipse(mouseX, mouseY+5, 15, 15);
+    ellipse(mouseX+75, mouseY+3, 12, 12);
     noStroke();
     fill(255);
-    ellipse(827, 603, 3, 5);
-    ellipse(895, 600, 2, 4);
+    ellipse(mouseX-3, mouseY+3, 3, 5);
+    ellipse(mouseX+73, mouseY, 2, 4);
     
 //monstermouth
     stroke(1);
-    triangle(860, 617, 870, 615, 865, 627);
-    triangle(870, 615, 879, 616, 875, 627);
-    triangle(851, 621, 860, 617, 856, 627);
-    triangle(879, 616, 886, 618, 883, 626);
+    triangle(mouseX+30, mouseY+17, mouseX+40, mouseY+15, mouseX+35, mouseY+27);
+    triangle(mouseX+40, mouseY+15, mouseX+49, mouseY+16, mouseX+45, mouseY+27);
+    triangle(mouseX+21, mouseY+21, mouseX+30, mouseY+17, mouseX+26, mouseY+27);
+    triangle(mouseX+49, mouseY+16, mouseX+56, mouseY+18, mouseX+53, mouseY+26);
 //bottomteeth
-    triangle(856, 627, 860, 617, 865, 627);
-    triangle(865, 627, 870, 615, 875, 627);
-    triangle(875, 627, 879, 616, 883, 626);
+    triangle(mouseX+26, mouseY+27, mouseX+30, mouseY+17, mouseX+35, mouseY+27);
+    triangle(mouseX+35, mouseY+27, mouseX+40, mouseY+15, mouseX+45, mouseY+27);
+    triangle(mouseX+45, mouseY+27, mouseX+49, mouseY+16, mouseX+53, mouseY+26);
 }
 
 function draw() {
