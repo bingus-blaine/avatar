@@ -70,28 +70,74 @@ fill(0); //teeth
     vertex(210, 390);
     endShape();
     
+var ex = 360
+var ey = 420
+var EX = 353
+var EY = 443
+
+var wx = 445
+var wy = 435
+var WX = 443
+var WY = 452
+
+var armpit = 260
+
+var thumb = 450
+var fingers = 458
+var palm = 449
+var leash = 452
+
+var connector1 = 460
+var connector2 = 457
+
+        if(mouseX<448){
+            ex = mouseX-100;
+            EX = mouseX-110;
+            wx = mouseX-4;
+            WX = mouseX-4;
+            thumb = mouseX;
+            palm = mouseX;
+            fingers = mouseX+10;
+            leash = mouseX+2;
+            connector1 = mouseX+5;
+            connector2 = mouseX+10;
+                } else{
+                    ex = 360;
+                }
+    ////////////////////////////
+       if(mouseX<400){
+                armpit = mouseX-130;
+                    } else{
+                    armpit = 260;
+                    }
 // LHand
     fill(13, 44, 105);
-    ellipse(449, 443, 35, 20); //palm
+    ellipse(palm, 443, 35, 20); //palm
     fill(88, 13, 13);
-    rect(452, 430, 8, 25);//leash
+    rect(leash, 430, 8, 25);//leash
     fill(13, 44, 105);
-    ellipse(458, 443, 18, 5); //fingers
-    ellipse(458, 452, 15, 4);
-    ellipse(458, 448, 18, 5);
-    ellipse(458, 438, 18, 5);
-    ellipse(450, 438, 5, 15);
-    
+    ellipse(fingers, 443, 18, 5); //fingers
+    ellipse(fingers, 452, 15, 4);
+    ellipse(fingers, 448, 18, 5);
+    ellipse(fingers, 438, 18, 5);
+    ellipse(thumb, 438, 5, 15);
+
+
 //LeftArm
     fill(0)
     beginShape();
-    vertex(260, 350);
-    vertex(360, 420);
-    vertex(445, 435);
-    vertex(443, 452);
-    vertex(353, 443);
-    vertex(260, 380);
+    vertex(260, 350); //shoulder
+    vertex(ex, ey); //elbow
+    vertex(wx, wy); //wrist
+    vertex(WX, WY); //wrist
+    vertex(EX, EY); //elbow
+    vertex(armpit, 380); //armpit
     endShape(0);   
+      
+//leash   
+    fill(74, 9, 9);
+    stroke(1);    
+    quad(connector1, 430, mouseX, mouseY, mouseX, mouseY, connector2, 433);
     
 
 //rightleg
@@ -156,10 +202,6 @@ fill(162, 92, 31);
     ellipse(mouseX-40, mouseY+73, 20, 20);
     rect(mouseX-7, mouseY+45, 20, 35);
     ellipse(mouseX+3, mouseY+76, 20, 20);
-//leash   
-    fill(74, 9, 9);
-    stroke(1);    
-    quad(460, 430, mouseX, mouseY, mouseX, mouseY, 457, 433);
 //monsterhead
     fill(162, 92, 31);
     stroke(1);
