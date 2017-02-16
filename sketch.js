@@ -132,13 +132,7 @@ var connector2 = 457
     vertex(WX, WY); //wrist
     vertex(EX, EY); //elbow
     vertex(armpit, 380); //armpit
-    endShape(0);   
-      
-//leash   
-    fill(74, 9, 9);
-    stroke(1);    
-    quad(connector1, 430, mouseX, mouseY, mouseX, mouseY, connector2, 433);
-    
+    endShape(0);  
 
 //rightleg
  fill(0);
@@ -203,6 +197,13 @@ fill(162, 92, 31);
     ellipse(mouseX-40, mouseY+73, 20, 20);
     rect(mouseX-7, mouseY+45, 20, 35);
     ellipse(mouseX+3, mouseY+76, 20, 20);
+ 
+ 
+ //leash   
+    fill(74, 9, 9);
+    stroke(1);    
+    quad(connector1, 430, mouseX, mouseY, mouseX, mouseY, connector2, 433);
+ 
 //monsterhead
     fill(162, 92, 31);
     stroke(1);
