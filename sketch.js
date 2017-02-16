@@ -141,6 +141,7 @@ var connector2 = 457
     
 
 //rightleg
+ fill(0);
     beginShape();
     vertex(210, 518);
     vertex(225, 600);
