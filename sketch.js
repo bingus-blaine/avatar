@@ -60,7 +60,7 @@ fill(0); //teeth
     stroke(1);
    
 //RightArm
-    fill(0)
+    fill(0);
     beginShape();
     vertex(220, 360);
     vertex(120, 390);
@@ -124,7 +124,7 @@ var connector2 = 457
 
 
 //LeftArm
-    fill(0)
+    fill(0);
     beginShape();
     vertex(260, 350); //shoulder
     vertex(ex, ey); //elbow
