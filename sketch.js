@@ -30,7 +30,7 @@ var wrist2y = 488
 var elbox = 140
 var elboy = 410
 
-//left arm
+//left arm//
     
 var ex = 360
 var ey = 420
