@@ -1,3 +1,4 @@
+
 function setup() {
 createCanvas(1300, 700);
 }
@@ -455,4 +456,3 @@ fill(0); //teeth
 }
 
    
-
